@@ -1,0 +1,20 @@
+To-Do List
+In use since 18.11.2024
+- Create Privacy & Policy (done)
+- Create Terms of Service (done)
+- Find Videos (done)
+- Implement Video in Home (done)
+- Create Build expansion (in-progress)
+- Insert Data into Carousel (done)
+- Format Privacy & Policy (done)
+- Format Terms of Service (done)
+- Format Carousel (done️)
+- Home Video say Source and format it (done)
+- Adjust Navbar Contrast
+- New pics for Persönlichkeiten & Hintergründe (done)
+- Format home
+- Format Video in Verteidigung (in-progress)
+- Work on Privacy & Policy and Terms of Service (done)
+- Carousel Source adjusted with content correctly
+- Erstellungsdatum & Überarbeitungdatum anzeigen lassen (done)
+- Prevent footer content moving when switching to other page

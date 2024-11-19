@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --host",
+    "build": "\"build\": \"set \\\"REACT_APP_LAST_BUILD_DATE=%date%\\\" && react-scripts build\"\n",
     "lint": "eslint .",
     "preview": "vite preview"
   },

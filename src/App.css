@@ -1,3 +1,4 @@
+/* Logo */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -11,38 +12,283 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-#image-icon {
+/* Image Icon */
+.image-icon {
   width: 2rem;
   height: 2rem;
   margin-left: 1rem;
   border-radius: 50%;
 }
 
-
-.nav-background-color {
-  background-color: #948484
+.image-side {
+  width: 80%;
 }
 
+.image-style {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-space {
+  padding-top: 6%;
+}
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Optional: Adjust padding as needed */
+  margin: 0 auto;
+  max-width: 100%; /* Ensures it doesn't go out of bounds */
+  box-sizing: border-box;
+  position: relative; /* Set the parent container to relative positioning */
+  width: 100%;
+  height: 300px; /* Example height */
+  overflow: hidden; /* Ensure child elements are constrained within the parent */
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 5%;
+}
+
+.video-style {
+  width: 100%;
+  max-width: 560px; /* Matches your original width */
+  aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
+  border-radius: 30px; /* Rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border: none; /* Removes default border */
+  overflow: hidden; /* Ensures content within the iframe follows the rounded corners */
+}
+
+
+
+/* Styling the link to make it blue with underline */
+.video-background-source a {
+  color: #1E90FF; /* Blue link color */
+  text-decoration: underline; /* Underscore for clickable links */
+}
+
+/* Positioning the source container */
+.video-background-source {
+  position: absolute; /* Position the child element relative to the parent */
+  bottom: 0; /* Push the child to the bottom of the parent container */
+  left: 0; /* Align to the left side */
+  width: auto; /* Adjust width based on content */
+  height: auto; /* Adjust height based on content */
+  text-align: left; /* Align the text to the left */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  color: white; /* Ensure text is visible */
+  padding: 10px; /* Add padding around the text */
+  display: flex; /* Use flexbox for vertical alignment */
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  border-top-right-radius: 15px;
+}
+
+.video-background-source p {
+  margin: 0; /* Remove default margin */
+}
+
+
+.video-style-iframe {
+  max-width: 100%; /* Makes the iframe responsive */
+  height: auto; /* Ensures the height scales proportionally */
+  aspect-ratio: 16/9; /* Maintains the 16:9 aspect ratio */
+  border-radius: 30px;
+}
+
+
+/* Navbar Background Color */
+.nav-background-color {
+  background-color: #948484;
+}
+
+/* Image Background */
+.image-background {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.image-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.text-content {
+  text-align: justify; /* Align text to both sides */
+  margin: 0; /* Remove extra margins */
+  padding-left: 5px; /* Match image spacing if needed */
+}
+
+/* Overlay Content */
+.overlay-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+.text-overlay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.overlay-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Navbar Design */
+#navbar-design {
+  position: fixed;
+  z-index: 1000;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 1%;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Brand Design */
+#navbar-brand-design {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navbar Toggler */
+.navbar-toggler.collapsed {
+  margin-right: 10px;
+}
+
+/* Navbar Link */
+.navbar-link {
+  color: #333;
+}
+
+/* Navbar Spacing */
+.navbar-space {
+  padding-top: 30%;
+  padding-bottom: 30%;
+}
+
+.navbar-toggler {
+  margin-right: 10px;
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:hover {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus:hover {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Brand Text */
+.brand-text {
+  display: inline-block;
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
+
+/* Fonts */
+h3 .title {
+  font-family: "Roboto Light";
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-paragraphs {
+  font-family: "Roboto Light";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.content-row {
+  display: flex;
+  align-items: stretch; /* Makes sure both columns stretch to the same height */
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content from the top of the column */
+}
+.carousel-image {
+  object-fit: cover; /* sorgt dafür, dass das Bild skaliert wird, ohne seine Proportionen zu verlieren */
+  height: 800px; /* setze die Höhe der Bilder auf eine feste Zahl */
+  width: 100%; /* sorgt dafür, dass das Bild immer die Breite des Containers ausfüllt */
+}
+
+.carousel-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+/* Cursor Styles */
+/*
+a, button, body {
+  cursor: none;
+}
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+button:hover ~ .custom-cursor,
+a:hover ~ .custom-cursor {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+*/

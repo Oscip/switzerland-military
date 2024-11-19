@@ -1,18 +1,37 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function ContentTextRight({ title, text, imageSrc }) {
+export default function ContentTextRight({ title, text, imageSrc, linkText, linkUrl, imageSourceText, imageSourceUrl }) {
     return (
-        <Container className="my-5">
-            <Row className="align-items-center mb-5">
+        <Container className="my-5 border-top border-black">
+            <Row className="align-items-center pb-5 pt-5">
+                {/* Image Column */}
                 <Col md={6}>
-                    <div className="bg-light p-5 text-center rounded">
-                        <img src={imageSrc} alt="Placeholder" className="img-fluid" />
+                    <div className="p-5 text-center">
+                        <img
+                            src={imageSrc}
+                            alt={title}
+                            className="img-fluid image-style"
+                        />
+                        {imageSourceText && imageSourceUrl && (
+                            <p>
+                                Quelle: <a href={imageSourceUrl} target="_blank" rel="noopener noreferrer">{imageSourceText}</a>
+                            </p>
+                        )}
                     </div>
                 </Col>
+
+                {/* Text Column */}
                 <Col md={6}>
-                    <h3>{title}</h3>
-                    <p>{text}</p>
+                    <div className="text-content">
+                        <h3>{title}</h3>
+                        <p>{text}</p>
+                        {linkText && linkUrl && (
+                            <p>
+                                Quelle: <a href={linkUrl} target="_blank" rel="noopener noreferrer">{linkText}</a>
+                            </p>
+                        )}
+                    </div>
                 </Col>
             </Row>
         </Container>
