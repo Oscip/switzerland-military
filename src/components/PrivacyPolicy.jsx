@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
                         <h2 className="h4">1. Einführung</h2>
                         <p>
                             Willkommen auf unserer Website! Wir, Oscar Peach und Fabian Beck, betreiben diese Plattform als Teil eines
-                            Bildungsprojekts am KBW. Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Diese
+                            Bildungsprojekts am der KBW. Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Diese
                             Datenschutzerklärung erklärt, welche Daten wir sammeln, wie wir sie nutzen und welche Rechte Ihnen
                             zustehen.
                         </p>
@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
                     <section className="mb-4">
                         <h2 className="h4">2. Verantwortliche Stelle</h2>
                         <p>
-                            Verantwortlich für diese Website sind Schüler des KBW. Sie dient ausschließlich Bildungszwecken und ist
+                            Verantwortlich für diese Website sind Schüler der KBW. Sie dient ausschließlich Bildungszwecken und ist
                             nicht dauerhaft erreichbar. Bei Fragen können Sie sich an unsere Projektbetreuer wenden.
                         </p>
                     </section>

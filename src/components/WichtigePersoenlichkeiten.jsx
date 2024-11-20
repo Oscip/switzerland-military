@@ -15,10 +15,8 @@ export default function WichtigePersoenlichkeiten() {
                 title="Wichtige Persönlichkeiten im Zweiten Weltkrieg"
                 text="Im Zweiten Weltkrieg gab es viele Persönlichkeiten, die im Vordergrund standen, wie Hitler oder Mussolini. Auch in der Schweiz gab es Menschen, die für ihr Land kämpften und es bestmöglich vor Gefahren schützten. Aufgeführt sind hier militärische sowie teilweise politische Personen, die sich gegen das deutsche Regime gewehrt hatten oder die Schweiz trotz der schwierigen Zeiten bereicherten."
                 imageSrc={ImageWP}
-                imageSourceText="Wichtige personen"
-                imageSourceUrl="https://www.weltkrieg2.de/personen/"
-
-
+                sourceUrl="https://www.weltkrieg2.de/personen/"
+                sourceText="Wichtige Personen"
             />
 
             <ContentTextLeft
@@ -27,7 +25,9 @@ export default function WichtigePersoenlichkeiten() {
     Guisan begann früh eine militärische Karriere und galt als sehr fähiger und vorausschauender Offizier. 1939, kurz vor Beginn des Zweiten Weltkriegs, wurde er zum General der Schweizer Armee ernannt. Seine wichtigste Verteidigungsstrategie war das Reduit-Konzept, bei dem die Truppen im Notfall ins schwer zugängliche Alpengebiet zurückgezogen werden sollten, um dort Widerstand zu leisten. Eine seiner bedeutendsten Aktionen war der Rütli-Rapport am 25. Juli 1940, bei dem er Offiziere auf den Widerstand einschwor. Dieser Akt stärkte den Mut der Armee und Bevölkerung und wurde zu einem Symbol für den Schweizer Verteidigungswillen. Heute gilt Guisan als Nationalheld und seine Ideen prägen das Verteidigungsdenken der Schweiz bis heute."
                 imageSrc={ImageHenriGuisan}
                 linkUrl="https://www.nzz.ch/schweiz/ein-gluecksfall-in-der-gefaehrlichsten-phase-unserer-geschichte-wie-general-guisan-zum-held-der-schweiz-wurde-und-was-er-uns-heute-noch-sagt-ld.1853528"
-                linkText="Wer ist er?" imageSourceText="Henri Guisan" imageSourceUrl="https://www.nzz.ch/schweiz/ein-gluecksfall-in-der-gefaehrlichsten-phase-unserer-geschichte-wie-general-guisan-zum-held-der-schweiz-wurde-und-was-er-uns-heute-noch-sagt-ld.1853528"
+                linkText="Wer ist er?"
+                imageSourceText="Henri Guisan"
+                imageSourceUrl="https://www.nzz.ch/schweiz/ein-gluecksfall-in-der-gefaehrlichsten-phase-unserer-geschichte-wie-general-guisan-zum-held-der-schweiz-wurde-und-was-er-uns-heute-noch-sagt-ld.1853528"
             />
 
             <ContentTextRight

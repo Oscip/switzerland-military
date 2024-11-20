@@ -32,7 +32,8 @@ export default function TermsService() {
                         <p>
                             Diese Website dient ausschließlich Bildungszwecken. Wir übernehmen keine Haftung für Schäden, die aus der
                             Nutzung dieser Website entstehen. Dazu zählen, aber nicht ausschließlich, technische Fehler, Datenverlust
-                            oder ungenaue Inhalte. Die Nutzung erfolgt auf eigene Verantwortung.
+                            oder ungenaue Inhalte. Die Nutzung erfolgt auf eigene Verantwortung. Wir karantieren auch in keinerweise
+                            das Inhalte der Website der Wahrheit entprechen.
                         </p>
                     </section>
 

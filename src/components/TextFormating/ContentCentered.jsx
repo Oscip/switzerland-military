@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 
-export default function ContentCentered({ title, imageSrc, text }) {
+export default function ContentCentered({ title, imageSrc, text, sourceUrl, sourceText }) {
     return (
         <div
             className="image-background d-flex align-items-center justify-content-center navbar-space"
@@ -10,7 +10,9 @@ export default function ContentCentered({ title, imageSrc, text }) {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '250px',
-                width: '100%'
+                width: '100%',
+                position: 'relative', // Ensure it's positioned relative to place the "Quelle" correctly
+                overflow: 'hidden',
             }}
         >
             <div className="overlay-content text-center">
@@ -18,6 +20,15 @@ export default function ContentCentered({ title, imageSrc, text }) {
                 <p>{text}</p>
             </div>
 
+            {/* Source container positioned at the bottom */}
+            <div className="video-background-source">
+                <p>
+                    Quelle:{' '}
+                    <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
+                        {sourceText}
+                    </a>
+                </p>
+            </div>
         </div>
     );
 }

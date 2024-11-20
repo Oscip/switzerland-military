@@ -9,7 +9,7 @@ export default function Footer() {
                 {/* Primary Navigation Links */}
                 <Row className="justify-content-center">
                     <Col xs="auto">
-                        <Link to="/" className="text-white text-decoration-none px-3">
+                        <Link to="/home" className="text-white text-decoration-none px-3">
                             Home
                         </Link>
                     </Col>

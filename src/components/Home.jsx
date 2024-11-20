@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from '../components/TextFormating/Carousel.jsx';
-import ContentCenteredVideo from "./TextFormating/ContentCenteredVideo.jsx";
+import ContentCenteredVideo from './TextFormating/ContentCenteredVideo.jsx';
 
 // Importing images
 import Imagegonard from '../assets/Images/WichtigePersoenlichkeiten_Samuel_Gonard.png';
@@ -24,58 +24,72 @@ export default function Home() {
     // Kategorie 1: Persönlichkeiten
     const personenSlides = [
         {
-            image: Imagegrenzen,
-            title: 'Burchatrt Gonard',
-            description: 'unfeinreifer militärischer Führer im 2.f dsaja fsj  Weltkrieg.',
-            linkUrl: 'https://mail.google.com/mail/u/0/#spam',
-            linkName: 'Gmail you wish',
+            image: Imageguisan,
+            title: 'Henri Guisan',
+            description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
+            linkUrl: 'https://www.nzz.ch/schweiz/ein-gluecksfall-in-der-gefaehrlichsten-phase-unserer-geschichte-wie-general-guisan-zum-held-der-schweiz-wurde-und-was-er-uns-heute-noch-sagt-ld.1853528',
+            linkName: 'Henri Guisan',
+            internalLink: '/wichtige-personlichkeiten',
         },
         {
             image: Imagegonard,
             title: 'Samuel Gonard',
-            description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
-            linkName: 'Bildquelle: Wikipedia',
-            linkUrl: 'https://www.wikipedia.org/',
+            description: 'Kompetenter Stratege im 2. Weltkrieg.',
+            linkUrl: 'https://de-academic.com/dic.nsf/dewiki/1230769',
+            linkName: 'Samuel Gonard',
+            internalLink: '/wichtige-personlichkeiten',
         },
         {
             image: Imageburckhardt,
-            title: 'Burchatrt Gonard',
-            description: 'unfeinreifer militärischer Führer im 2.f dsaja fsj  Weltkrieg.',
-            linkUrl: 'https://youtube.com',
-            linkName: 'Learn youtube wish',
+            title: 'Carl Buckhardt',
+            description: 'Präsident des Internationalen Komitees vom Roten Kreuz im 2. Weltkrieg.',
+            linkUrl: 'https://de.wikipedia.org/wiki/Carl_Jacob_Burckhardt',
+            linkName: 'Carl Buckhardt',
+            internalLink: '/wichtige-personlichkeiten',
+        },
+        {
+            image: Imagemasson,
+            title: 'Roger Masson',
+            description: 'Zuständig für das Informationsnetz.',
+            linkUrl: 'https://en.wikipedia.org/wiki/Roger_Masson',
+            linkName: 'Roger Masson',
+            internalLink: '/wichtige-personlichkeiten',
         },
     ];
-
 
     // Kategorie 2: Verteidigung
     const verteidigungSlides = [
         {
             image: Imagebrucke,
-            title: 'Strategische Brücken',
-            description: 'Militärische Infrastruktur zur Verteidigung.',
-            linkName: 'Bildquelle: Wikipedia',
-            linkUrl: 'https://de.wikipedia.org/wiki/Strategische_Brücke'
+            title: 'Brückensprengungen',
+            description: 'Brücken wurden mit Sprengstoff bestückt, um Wege zu versperren.',
+            linkUrl: 'https://www.badische-zeitung.de/schweizer-haben-nicht-nur-bruecken-mit-tnt-bestueckt',
+            linkName: 'Brücke',
+            internalLink: '/verteidigung',
         },
         {
             image: Imagegrenzen,
             title: 'Grenzsicherung',
             description: 'Die Schweiz verteidigte ihre Grenzen rigoros.',
-            linkName: 'Bildquelle: Wikipedia',
-            linkUrl: 'https://de.wikipedia.org/wiki/Grenzsicherung'
+            linkUrl: 'https://geschichtedergegenwart.ch/stacheldraht-und-volles-boot-georg-kreis/',
+            linkName: 'Grenzschutz',
+            internalLink: '/verteidigung',
         },
         {
             image: Imagereduit,
             title: 'Alpen-Reduit',
             description: 'Strategie, um eine Eroberung zu erschweren.',
+            linkUrl: 'https://de.wikipedia.org/wiki/Schweizer_Réduit',
             linkName: 'Bildquelle: Wikimedia Commons',
-            linkUrl: 'https://commons.wikimedia.org/wiki/File:Alpen-Reduit.jpg'
+            internalLink: '/verteidigung',
         },
         {
             image: Imagebunker,
             title: 'Bunkerbau',
             description: 'Verteidigungsbauten im ganzen Land verteilt.',
-            linkName: 'Bildquelle: Wikimedia Commons',
-            linkUrl: 'https://commons.wikimedia.org/wiki/File:Bunkerbau_Schweiz.jpg'
+            linkUrl: 'https://schweiz.fandom.com/de/wiki/Schweizer_Reduit',
+            linkName: 'Schweiz.fandom',
+            internalLink: '/verteidigung',
         },
     ];
 
@@ -85,29 +99,33 @@ export default function Home() {
             image: Imageneutralitaet,
             title: 'Neutralität',
             description: 'Wie die Schweiz ihre Neutralität bewahrte.',
-            linkName: 'Bildquelle: Wikimedia Commons',
-            linkUrl: 'https://commons.wikimedia.org/wiki/File:Neutralitaet.jpg'
+            linkUrl: 'https://www.swissinfo.ch/ger/kultur/blog-schweizerisches-nationalmuseum_das-schweizer-milizsystem/45375540',
+            linkName: 'Neutralität',
+            internalLink: '/historische-hintergruende',
         },
         {
             image: Imagefluchtlinge,
             title: 'Flüchtlinge',
             description: 'Die Schweiz nahm während des Krieges viele Flüchtlinge auf.',
-            linkName: 'Bildquelle: Wikimedia Commons',
-            linkUrl: 'https://commons.wikimedia.org/wiki/File:Fluechtlinge_Schweiz.jpg'
+            linkUrl: 'https://www.uek.ch/de/schlussbericht/Publikationen/Zusammenfassungenpdf/17d.pdf',
+            linkName: 'Flüchtlinge',
+            internalLink: '/historische-hintergruende',
         },
         {
             image: Imagekreuz,
             title: 'Schweizer Kreuz',
             description: 'Symbol der Schweiz und ihrer Unabhängigkeit.',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Schweizer_Kreuz.jpg',
             linkName: 'Bildquelle: Wikimedia Commons',
-            linkUrl: 'https://commons.wikimedia.org/wiki/File:Schweizer_Kreuz.jpg'
+            internalLink: '/historische-hintergruende',
         },
         {
             image: Imagearmee,
             title: 'Schweizer Armee',
             description: 'Rolle und Ausbau der Armee im 2. Weltkrieg.',
-            linkName: 'Bildquelle: Wikipedia',
-            linkUrl: 'https://de.wikipedia.org/wiki/Schweizer_Armee'
+            linkUrl: 'https://www.swissinfo.ch/ger/kultur/blog-schweizerisches-nationalmuseum_das-schweizer-milizsystem/45375540',
+            linkName: 'swissinfo',
+            internalLink: '/historische-hintergruende',
         },
     ];
 
@@ -115,38 +133,44 @@ export default function Home() {
         console.log(`Slide changed to index: ${newIndex}`);
     };
 
-
     return (
         <div>
             <ContentCenteredVideo
                 title="Allgemeines"
                 videoSrc={VideoBackground}
-                text="Auf dieser Website werden ihnen die militärischen Gegebenheiten der Schweiz im 2ten Weltkrieg etwas nähergebracht. Wir werden sie durch die verschiedenen Verteidigungsstrategien führen, bekannte und wichtige Persönlichkeiten vorstellen und die geschichtlichen Hintergründe erläutern, damit sie die Zusammenhänge möglichst gut verstehen."
+                text="Auf dieser Website werden Ihnen die militärischen Gegebenheiten der Schweiz im 2. Weltkrieg nähergebracht. Wir führen Sie durch die verschiedenen Verteidigungsstrategien, stellen wichtige Persönlichkeiten vor und erläutern geschichtliche Hintergründe, damit Sie die Zusammenhänge möglichst gut verstehen."
                 videoSourceText="Swiss Armee in WW2"
                 videoSourceUrl="https://www.youtube.com/watch?v=5a77ISffxEo"
-            /><br/><br/>
-            <h2 className="carousel-text">Persönlichkeiten</h2>
-            <Carousel
-                slides={personenSlides}
-                onSlideChange={handleSlideChange}
-                autoSlideInterval={3000}
             />
+            <div className="carousel-div">
+                <div className="carousel-container">
+                    <h2 className="carousel-text">Persönlichkeiten</h2>
+                    <Carousel
+                        slides={personenSlides}
+                        onSlideChange={handleSlideChange}
+                        autoSlideInterval={4500}
+                    />
+                </div>
 
-            <h2 className="carousel-text">Verteidigung</h2>
-            <Carousel
-                slides={verteidigungSlides}
-                onSlideChange={handleSlideChange}
-                autoSlideInterval={3000}
-            />
+                <div className="carousel-container">
+                    <h2 className="carousel-text">Verteidigung</h2>
+                    <Carousel
+                        slides={verteidigungSlides}
+                        onSlideChange={handleSlideChange}
+                        autoSlideInterval={4500}
+                    />
+                </div>
 
-            <h2 className="carousel-text">Historische Hintergründe</h2>
-            <Carousel
-                slides={hintergrundSlides}
-                onSlideChange={handleSlideChange}
-                autoSlideInterval={3000}
-            />
-            <p></p>
-            <ContentDate/>
+                <div className="carousel-container">
+                    <h2 className="carousel-text">Historische Hintergründe</h2>
+                    <Carousel
+                        slides={hintergrundSlides}
+                        onSlideChange={handleSlideChange}
+                        autoSlideInterval={4500}
+                    />
+                </div>
+            </div>
+            <ContentDate />
         </div>
     );
 }

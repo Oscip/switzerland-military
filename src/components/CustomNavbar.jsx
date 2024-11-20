@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import icon from "../assets/Icons/icon_switzerland.png";
-import './CustomNavbar.css'; // External CSS for animation styles
+import './CustomNavbar.css';
 
 export default function CustomNavbar() {
     const [showNavbar, setShowNavbar] = useState(true);

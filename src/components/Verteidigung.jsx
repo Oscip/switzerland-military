@@ -14,10 +14,9 @@ export default function Verteidigung() {
                 title="Die Verteidigung der Schweiz im Zweiten Weltkrieg"
                 text="Im Zweiten Weltkrieg stand die Schweiz unter grossem Druck. Umgeben von den Achsenmächten Deutschland und Italien war die neutrale Schweiz ständig bedroht. Die Regierung und die Armee bereiteten sich deshalb auf eine mögliche Invasion vor und arbeiteten an einer starken Verteidigungsstrategie, die das Land für Feinde unattraktiv machen sollte. Im Mittelpunkt dieser Strategie stand das sogenannte Alpen-Reduit, das viele militärische Massnahmen und Bauprojekte beinhaltete. Ziel war es, das Land für Angreifer so schwierig und teuer wie möglich zu machen. Die Verteidigungsstrategie umfasste unter anderem befestigte Bunkeranlagen in den Bergen und Pläne, bei einem Angriff strategische Brücken und Strassen zu sprengen. Die Schweizer Armee war auf Rückzug und Verteidigung ausgerichtet, um das Überleben der Bevölkerung und des Staates zu sichern."
                 imageSrc={ImageVerteidigung}
-                linkUrl="https://www.youtube.com/playlist?list=PLyxIylscfwI34y0BQvQOcE-oSfRciYets"
-                linkText="playlist Verteidigung"
-                imageSourceText="Grenzbesetzung"
-                imageSourceUrl="https://brienzer-dorfgeschichte.ch/acht-eis-detailansicht/grenzbesetzung.html"
+                sourceUrl="https://geschichtedergegenwart.ch/stacheldraht-und-volles-boot-georg-kreis/"
+                sourceText="Verteidigung"
+
             />
 
             <ContentTextLeft
@@ -50,7 +49,7 @@ export default function Verteidigung() {
                 imageSourceUrl="https://www.badische-zeitung.de/schweizer-haben-nicht-nur-bruecken-mit-tnt-bestueckt"
             />
 
-            <div className="d-flex justify-content-center align-items-start p-3 mb-3">
+            <div className="d-flex justify-content-center align-items-start p-3 video-div">
                 <iframe
                     width="560"
                     height="315"

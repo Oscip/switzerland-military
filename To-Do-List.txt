@@ -4,23 +4,27 @@ In use since 18.11.2024
 - Create Terms of Service (done)
 - Find Videos (done)
 - Implement Video in Home (done)
-- Create Build expansion (in-progress)
 - Insert Data into Carousel (done)
 - Format Privacy & Policy (done)
 - Format Terms of Service (done)
 - Format Carousel (done️)
 - Home Video say Source and format it (done)
-- Adjust Navbar Contrast
 - New pics for Persönlichkeiten & Hintergründe (done)
-- Format home
-- Format Video in Verteidigung (in-progress)
+- Format Video in Verteidigung (done)
 - Work on Privacy & Policy and Terms of Service (done)
-- Carousel Source adjusted with content correctly
+- Carousel Source adjusted with content correctly (done)
 - Erstellungsdatum & Überarbeitungdatum anzeigen lassen (done)
-- Prevent footer content moving when switching to other page (optional)
+- Add Source to all the ContentCentered (done)
+- Add Link on when pressed on Picture in Home (done)
+- Create Build expansion (in-progress)
+- Add Sources to the ContentCentered (in-progress)
+- Change the values of charousel (in-progress)
+- Adjust Navbar Contrast
+- Format home
 - Spacing in Verteidigung Video and last changed
-- Add Source to ContentCentered
 - Read through every Text
+- Prevent footer content moving when switching to other page (optional)
+- Do detailing
 - General Testing of the website
 - Performance Tester
 - Validator

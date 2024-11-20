@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "\"build\": \"set \\\"REACT_APP_LAST_BUILD_DATE=%date%\\\" && react-scripts build\"\n",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

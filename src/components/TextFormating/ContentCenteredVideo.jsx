@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 
-export default function ContentCentered({ title, videoSrc, text, videoSourceText, videoSourceUrl}) {
+export default function ContentCenteredVideo({ title, videoSrc, text, videoSourceText, videoSourceUrl}) {
     return (
         <div
             className="video-background-container d-flex align-items-center justify-content-center navbar-space"

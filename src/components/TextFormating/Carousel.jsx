@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -23,20 +24,12 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
         }
     }, [autoSlideInterval, activeIndex]);
 
-    // Current slide
     const currentSlide = slides[activeIndex];
 
     return (
         <div
             id="carouselExampleCaptions"
-            className="carousel slide"
-            style={{
-                transform: 'scale(0.5)',
-                transformOrigin: 'top center',
-                margin: '0 auto',
-                marginTop: '5%',
-                maxWidth: '100%',
-            }}
+            className="carousel slide carousel-slide"
         >
             {/* Indicators */}
             <div className="carousel-indicators">
@@ -60,11 +53,18 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                         key={index}
                         className={`carousel-item ${activeIndex === index ? 'active' : ''}`}
                     >
-                        <img
-                            src={slide.image}
-                            className="d-block w-100 carousel-image"
-                            alt={slide.title}
-                        />
+                        {/* Bild mit internem Link */}
+                        <Link
+                            to={slide.internalLink}
+                            style={{ display: 'block' }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <img
+                                src={slide.image}
+                                className="d-block w-100 carousel-image"
+                                alt={slide.title}
+                            />
+                        </Link>
                         <div className="carousel-caption">
                             <h5>{slide.title}</h5>
                             <p>{slide.description}</p>
@@ -95,7 +95,7 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                 <span className="visually-hidden">Next</span>
             </button>
 
-            {/* Link Section */}
+            {/* Quellenangabe */}
             {currentSlide.linkName && currentSlide.linkUrl && (
                 <p
                     style={{

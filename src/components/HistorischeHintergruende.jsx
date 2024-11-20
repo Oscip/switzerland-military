@@ -20,8 +20,8 @@ export default function Verteidigung() {
                 imageSrc={grenzwacht}
                 linkUrl="https://www.youtube.com/watch?v=7efKE0RIC00"
                 linkText="Wieso kein Angriff?"
-                imageSourceText="Bordercontroll"
-                imageSourceUrl="https://geschichtedergegenwart.ch/stacheldraht-und-volles-boot-georg-kreis/"
+                sourceUrl="https://geschichtedergegenwart.ch/stacheldraht-und-volles-boot-georg-kreis/"
+                sourceText="Grenzkontrolle"
             />
             <ContentTextRight
                 title="Die Schweizer Armee: Klein, aber schlau"
@@ -41,7 +41,7 @@ Auch heute setzen wir auf Verteidigung. Unsere Armee besteht aus Bürgerinnen un
 Diese Haltung gilt bis heute. Wir sind kein Mitglied der NATO und schicken keine Soldaten in Konfliktzonen. Stattdessen helfen wir auf andere Weise, zum Beispiel durch das Internationale Komitee vom Roten Kreuz, das in Genf seinen Sitz hat. Dank unserer Neutralität können wir in Konflikten oft vermitteln und Lösungen finden, wo andere scheitern."
                 imageSrc={Neutralitaet}
                 linkUrl="https://www.eda.admin.ch/eda/de/home/aussenpolitik/voelkerrecht/neutralitaet.html"
-                linkText="schweizer Neutralität"
+                linkText="Schweizer Neutralität"
                 imageSourceText="Leuchtturm der Neutralität"
                 imageSourceUrl="https://www.swissinfo.ch/ger/kultur/blog-schweizerisches-nationalmuseum_das-schweizer-milizsystem/45375540"
             />
@@ -59,8 +59,8 @@ Das war ein dunkles Kapitel in unserer Geschichte und wurde zu Recht kritisiert.
             />
 
             <ContentTextSided
-                leftTitle="Was wir daraus lernen können"
-                leftText={<><p><p>Die Geschichte zeigt, dass Neutralität, Verteidigungsbereitschaft und Diplomatie ein Land
+                rightTitle="Was wir daraus lernen können"
+                rightText={<><p><p>Die Geschichte zeigt, dass Neutralität, Verteidigungsbereitschaft und Diplomatie ein Land
                     sicher machen können - sogar ein kleines wie die Schweiz.</p>
                     <ul> <li><strong>Neutralität kann stark machen:</strong> Sie hat uns geholfen, Konflikte zu vermeiden und trotzdem Einfluss zu
                         haben.</li><br/>
@@ -76,7 +76,7 @@ Das war ein dunkles Kapitel in unserer Geschichte und wurde zu Recht kritisiert.
                     Selbstschutz und Verantwortung zu finden. Das ist eine Herausforderung, die uns auch heute noch
                     beschäftigt - und zeigt, wie wichtig es ist, als kleines Land grosse Ideen zu haben.</p></>}
                 leftTitle="Warum Hitler die Schweiz nicht angegriffen hat"
-                rightText={<p>Dass Hitler die Schweiz nicht angegriffen hat, lag an mehreren Gründen:<br/><br/>
+                leftText={<p>Dass Hitler die Schweiz nicht angegriffen hat, lag an mehreren Gründen:<br/><br/>
 
                     <ul>
                         <li><strong>Die Alpen als Festung:</strong> Die Berge waren ein riesiges Hindernis, und unser

@@ -80,6 +80,7 @@
 .video-background-source a {
   color: #1E90FF; /* Blue link color */
   text-decoration: underline; /* Underscore for clickable links */
+  z-index: 20;
 }
 
 /* Positioning the source container */
@@ -97,6 +98,7 @@
   justify-content: flex-start; /* Align content to the left */
   align-items: center; /* Vertically center the content */
   border-top-right-radius: 15px;
+  z-index: 10;
 }
 
 .video-background-source p {
@@ -109,6 +111,10 @@
   height: auto; /* Ensures the height scales proportionally */
   aspect-ratio: 16/9; /* Maintains the 16:9 aspect ratio */
   border-radius: 30px;
+}
+
+.video-div {
+  margin-bottom: 10%;
 }
 
 
@@ -258,46 +264,107 @@ h3 .title {
   flex-direction: column;
   justify-content: flex-start; /* Aligns content from the top of the column */
 }
+.carousel-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.carousel-container {
+  width: 100%; /* Occupy full parent width */
+  display: flex;
+  flex-direction: column; /* Ensure title and carousel stack vertically */
+  align-items: center; /* Center align contents */
+}
+
+.carousel-slide {
+  transform: scale(1); /* Keep the size full */
+  transform-origin: top center; /* Ensure scaling centers */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 5%;
+  width: 80%; /* 80% of the carousel-container width */
+  max-width: 100%; /* Prevent overflow */
+}
 
 .carousel-text {
   width: 100%;
-  display:flex;
-  justify-content: center;
+  text-align: center; /* Center the text horizontally */
 }
 
 .carousel-image {
   position: relative;
-  height: 800px;
+  height: 600px; /* Adjust height as per your requirement */
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Maintain aspect ratio of images */
 }
 
 .carousel-caption {
-  position: absolute; /* Ensures it is placed on the image */
-  bottom: 10%; /* Adjusts distance from the bottom of the image */
-  left: 50%; /* Positions the center of the caption at the horizontal center of the container */
-  transform: translate(-50%, 10%); /* Centers horizontally and adjusts vertical placement */
-  display: flex; /* Enables flexbox for centering content */
-  flex-direction: column; /* Aligns children (title and description) in a column */
-  justify-content: center; /* Vertically centers the content */
-  align-items: center; /* Horizontally centers the content */
-  text-align: center; /* Centers the text inside each child element */
-  color: white; /* Ensures readability over the image */
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-  padding: 10px; /* Adds spacing around the text */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 80%; /* Optional: limits how wide the caption can be */
-  width: auto; /* Allows the caption width to adjust to its content */
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  width: 80%;
 }
 
 .carousel-indicators {
   bottom: 50px;
 }
 
+.carousel-inner {
+  border-radius: 30px;
+}
+
+/* Allgemeines Layout für die Carousels */
+.carousel-div {
+  display: flex;
+  justify-content: space-between; /* Verteilt die Carousels gleichmäßig */
+  gap: 20px; /* Abstand zwischen den Carousels */
+}
+
+.carousel-container {
+  flex: 1; /* Lässt jedes Carousel gleichmäßig Platz einnehmen */
+  max-width: 33%; /* Verhindert, dass die Carousels zu breit werden */
+}
+
+/* Media Query für Bildschirme unter 1150px */
+@media (max-width: 1150px) {
+  .carousel-div {
+    flex-direction: column; /* Stapelt die Carousels untereinander */
+    align-items: center; /* Zentriert die Carousels */
+  }
+
+  .carousel-container {
+    max-width: 100%; /* Lässt jedes Carousel die volle Breite einnehmen */
+    margin-bottom: 20px; /* Fügt Abstand zwischen den gestapelten Carousels hinzu */
+  }
+}
 
 
+.text-container {
+  display: flex;
+  flex-direction: column; /* Stack the paragraphs on top of each other */
+  gap: 0.5rem; /* Optional: Adds space between the paragraphs */
+}
 
+.created-info {
+  /* Add any specific styles you need for the first paragraph */
+}
 
+.edited-info {
+  border-bottom: 2px solid black; /* Apply the bottom border to the second paragraph */
+  padding-bottom: 0.5rem; /* Optional: Adds padding so the text doesn’t touch the border */
+}
 
 
 /* Cursor Styles */

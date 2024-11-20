@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ContentDate from "./TextFormating/ContentDate.jsx";
 
 export default function NotFound() {
     return (
@@ -11,10 +10,9 @@ export default function NotFound() {
             <p className="mb-4 text-muted">
                 The page you're looking for doesn't exist or has been moved.
             </p>
-            <Link to="/" className="btn btn-primary btn-lg">
+            <Link to="/home" className="btn btn-primary btn-lg">
                 Go Back Home
             </Link>
-            <ContentDate/>
         </div>
     );
 }
