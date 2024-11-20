@@ -23,6 +23,9 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
         }
     }, [autoSlideInterval, activeIndex]);
 
+    // Current slide
+    const currentSlide = slides[activeIndex];
+
     return (
         <div
             id="carouselExampleCaptions"
@@ -35,6 +38,7 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                 maxWidth: '100%',
             }}
         >
+            {/* Indicators */}
             <div className="carousel-indicators">
                 {slides.map((_, index) => (
                     <button
@@ -48,6 +52,8 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                     ></button>
                 ))}
             </div>
+
+            {/* Slides */}
             <div className="carousel-inner">
                 {slides.map((slide, index) => (
                     <div
@@ -66,6 +72,8 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                     </div>
                 ))}
             </div>
+
+            {/* Navigation Buttons */}
             <button
                 className="carousel-control-prev"
                 type="button"
@@ -86,9 +94,32 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-            <p>Test</p>
-        </div>
 
+            {/* Link Section */}
+            {currentSlide.linkName && currentSlide.linkUrl && (
+                <p
+                    style={{
+                        marginTop: '20px',
+                        textAlign: 'center',
+                        fontSize: '16px',
+                    }}
+                >
+                    <span style={{ fontWeight: 'bold' }}>Quelle:</span>{' '}
+                    <a
+                        href={currentSlide.linkUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            color: '#007bff',
+                            textDecoration: 'underline',
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        {currentSlide.linkName}
+                    </a>
+                </p>
+            )}
+        </div>
     );
 };
 

@@ -24,52 +24,91 @@ export default function Home() {
     // Kategorie 1: Persönlichkeiten
     const personenSlides = [
         {
-            image: Imagegonard,
-            title: 'Samuel Gonard',
-            description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
-            sourceText: 'Bildquelle: Wikipedia',
-            sourceUrl: 'https://de.wikipedia.org/wiki/Samuel_Gonard',
-            name: 'Military Leader',
-            customDescription: 'Leader during critical times in WWII.',
-            link: 'https://example.com/gonard',
-            linkText: 'Learn More',
+            image: Imagegrenzen,
+            title: 'Burchatrt Gonard',
+            description: 'unfeinreifer militärischer Führer im 2.f dsaja fsj  Weltkrieg.',
+            linkUrl: 'https://mail.google.com/mail/u/0/#spam',
+            linkName: 'Gmail you wish',
         },
         {
             image: Imagegonard,
             title: 'Samuel Gonard',
             description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
-            sourceText: 'Bildquelle: Wikipedia',
-            sourceUrl: 'https://de.wikipedia.org/wiki/Samuel_Gonard',
+            linkName: 'Bildquelle: Wikipedia',
+            linkUrl: 'https://www.wikipedia.org/',
         },
         {
             image: Imageburckhardt,
             title: 'Burchatrt Gonard',
             description: 'unfeinreifer militärischer Führer im 2.f dsaja fsj  Weltkrieg.',
-            sourceText: 'Bildquelle: i dinere träum',
-            sourceUrl: 'https://de.wikipedia.org/wiki/Test',
-            name: 'Military not you dream',
-            customDescription: 'Leader not being the most women critical times in WWII.',
-            link: 'https://youtube.com',
-            linkText: 'Learn you wish',
+            linkUrl: 'https://youtube.com',
+            linkName: 'Learn youtube wish',
         },
-        // Add other slides...
     ];
 
 
     // Kategorie 2: Verteidigung
     const verteidigungSlides = [
-        { image: Imagebrucke, title: 'Strategische Brücken', description: 'Militärische Infrastruktur zur Verteidigung.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://de.wikipedia.org/wiki/Strategische_Brücke' },
-        { image: Imagegrenzen, title: 'Grenzsicherung', description: 'Die Schweiz verteidigte ihre Grenzen rigoros.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://de.wikipedia.org/wiki/Grenzsicherung' },
-        { image: Imagereduit, title: 'Alpen-Reduit', description: 'Strategie, um eine Eroberung zu erschweren.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Alpen-Reduit.jpg' },
-        { image: Imagebunker, title: 'Bunkerbau', description: 'Verteidigungsbauten im ganzen Land verteilt.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Bunkerbau_Schweiz.jpg' },
+        {
+            image: Imagebrucke,
+            title: 'Strategische Brücken',
+            description: 'Militärische Infrastruktur zur Verteidigung.',
+            linkName: 'Bildquelle: Wikipedia',
+            linkUrl: 'https://de.wikipedia.org/wiki/Strategische_Brücke'
+        },
+        {
+            image: Imagegrenzen,
+            title: 'Grenzsicherung',
+            description: 'Die Schweiz verteidigte ihre Grenzen rigoros.',
+            linkName: 'Bildquelle: Wikipedia',
+            linkUrl: 'https://de.wikipedia.org/wiki/Grenzsicherung'
+        },
+        {
+            image: Imagereduit,
+            title: 'Alpen-Reduit',
+            description: 'Strategie, um eine Eroberung zu erschweren.',
+            linkName: 'Bildquelle: Wikimedia Commons',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Alpen-Reduit.jpg'
+        },
+        {
+            image: Imagebunker,
+            title: 'Bunkerbau',
+            description: 'Verteidigungsbauten im ganzen Land verteilt.',
+            linkName: 'Bildquelle: Wikimedia Commons',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Bunkerbau_Schweiz.jpg'
+        },
     ];
 
     // Kategorie 3: Historische Hintergründe
     const hintergrundSlides = [
-        { image: Imageneutralitaet, title: 'Neutralität', description: 'Wie die Schweiz ihre Neutralität bewahrte.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Neutralitaet.jpg' },
-        { image: Imagefluchtlinge, title: 'Flüchtlinge', description: 'Die Schweiz nahm während des Krieges viele Flüchtlinge auf.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Fluechtlinge_Schweiz.jpg' },
-        { image: Imagekreuz, title: 'Schweizer Kreuz', description: 'Symbol der Schweiz und ihrer Unabhängigkeit.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Schweizer_Kreuz.jpg' },
-        { image: Imagearmee, title: 'Schweizer Armee', description: 'Rolle und Ausbau der Armee im 2. Weltkrieg.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://de.wikipedia.org/wiki/Schweizer_Armee' },
+        {
+            image: Imageneutralitaet,
+            title: 'Neutralität',
+            description: 'Wie die Schweiz ihre Neutralität bewahrte.',
+            linkName: 'Bildquelle: Wikimedia Commons',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Neutralitaet.jpg'
+        },
+        {
+            image: Imagefluchtlinge,
+            title: 'Flüchtlinge',
+            description: 'Die Schweiz nahm während des Krieges viele Flüchtlinge auf.',
+            linkName: 'Bildquelle: Wikimedia Commons',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Fluechtlinge_Schweiz.jpg'
+        },
+        {
+            image: Imagekreuz,
+            title: 'Schweizer Kreuz',
+            description: 'Symbol der Schweiz und ihrer Unabhängigkeit.',
+            linkName: 'Bildquelle: Wikimedia Commons',
+            linkUrl: 'https://commons.wikimedia.org/wiki/File:Schweizer_Kreuz.jpg'
+        },
+        {
+            image: Imagearmee,
+            title: 'Schweizer Armee',
+            description: 'Rolle und Ausbau der Armee im 2. Weltkrieg.',
+            linkName: 'Bildquelle: Wikipedia',
+            linkUrl: 'https://de.wikipedia.org/wiki/Schweizer_Armee'
+        },
     ];
 
     const handleSlideChange = (newIndex) => {

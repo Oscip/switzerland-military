@@ -17,6 +17,7 @@ export default function ContentCentered({ title, imageSrc, text }) {
                 <h2 className="text-overlay">{title}</h2>
                 <p>{text}</p>
             </div>
+
         </div>
     );
 }

@@ -290,6 +290,10 @@ h3 .title {
   width: auto; /* Allows the caption width to adjust to its content */
 }
 
+.carousel-indicators {
+  bottom: 50px;
+}
+
 
 
 
