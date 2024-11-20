@@ -23,11 +23,38 @@ import ContentDate from "./TextFormating/ContentDate.jsx";
 export default function Home() {
     // Kategorie 1: Persönlichkeiten
     const personenSlides = [
-        { image: Imagegonard, title: 'Samuel Gonard', description: 'Wichtiger militärischer Führer im 2. Weltkrieg.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://de.wikipedia.org/wiki/Samuel_Gonard' },
-        { image: Imageguisan, title: 'Henri Guisan', description: 'General und Symbol des Widerstands der Schweiz.', sourceText: 'Bildquelle: Wikimedia Commons', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Henri_Guisan.jpg' },
-        { image: Imageburckhardt, title: 'Carl Burckhardt', description: 'Diplomat und Präsident des IKRK.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://de.wikipedia.org/wiki/Carl_Jacob_Burckhardt' },
-        { image: Imagemasson, title: 'Roger Masson', description: 'Chef der Schweizer Nachrichtendienste im Krieg.', sourceText: 'Bildquelle: Wikipedia', sourceUrl: 'https://en.wikipedia.org/wiki/Roger_Masson' },
+        {
+            image: Imagegonard,
+            title: 'Samuel Gonard',
+            description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
+            sourceText: 'Bildquelle: Wikipedia',
+            sourceUrl: 'https://de.wikipedia.org/wiki/Samuel_Gonard',
+            name: 'Military Leader',
+            customDescription: 'Leader during critical times in WWII.',
+            link: 'https://example.com/gonard',
+            linkText: 'Learn More',
+        },
+        {
+            image: Imagegonard,
+            title: 'Samuel Gonard',
+            description: 'Wichtiger militärischer Führer im 2. Weltkrieg.',
+            sourceText: 'Bildquelle: Wikipedia',
+            sourceUrl: 'https://de.wikipedia.org/wiki/Samuel_Gonard',
+        },
+        {
+            image: Imageburckhardt,
+            title: 'Burchatrt Gonard',
+            description: 'unfeinreifer militärischer Führer im 2.f dsaja fsj  Weltkrieg.',
+            sourceText: 'Bildquelle: i dinere träum',
+            sourceUrl: 'https://de.wikipedia.org/wiki/Test',
+            name: 'Military not you dream',
+            customDescription: 'Leader not being the most women critical times in WWII.',
+            link: 'https://youtube.com',
+            linkText: 'Learn you wish',
+        },
+        // Add other slides...
     ];
+
 
     // Kategorie 2: Verteidigung
     const verteidigungSlides = [
@@ -58,8 +85,7 @@ export default function Home() {
                 text="Auf dieser Website werden ihnen die militärischen Gegebenheiten der Schweiz im 2ten Weltkrieg etwas nähergebracht. Wir werden sie durch die verschiedenen Verteidigungsstrategien führen, bekannte und wichtige Persönlichkeiten vorstellen und die geschichtlichen Hintergründe erläutern, damit sie die Zusammenhänge möglichst gut verstehen."
                 videoSourceText="Swiss Armee in WW2"
                 videoSourceUrl="https://www.youtube.com/watch?v=5a77ISffxEo"
-            />
-
+            /><br/><br/>
             <h2 className="carousel-text">Persönlichkeiten</h2>
             <Carousel
                 slides={personenSlides}

@@ -60,28 +60,53 @@ Das war ein dunkles Kapitel in unserer Geschichte und wurde zu Recht kritisiert.
 
             <ContentTextSided
                 leftTitle="Was wir daraus lernen können"
-                leftText="Die Geschichte zeigt, dass Neutralität, Verteidigungsbereitschaft und Diplomatie ein Land sicher machen können - sogar ein kleines wie die Schweiz.
+                leftText={<><p><p>Die Geschichte zeigt, dass Neutralität, Verteidigungsbereitschaft und Diplomatie ein Land
+                    sicher machen können - sogar ein kleines wie die Schweiz.</p>
+                    <ul> <li><strong>Neutralität kann stark machen:</strong> Sie hat uns geholfen, Konflikte zu vermeiden und trotzdem Einfluss zu
+                        haben.</li><br/>
 
-    Neutralität kann stark machen: Sie hat uns geholfen, Konflikte zu vermeiden und trotzdem Einfluss zu haben.
+                        <li><strong>Aus der Vergangenheit lernen:</strong> Unsere Fehler in der Flüchtlingspolitik erinnern uns daran, dass
+                    humanitäre Verantwortung wichtig ist. Gerade in einer Welt, in der so viele Menschen auf der Flucht
+                    sind, müssen wir Solidarität zeigen.</li><br/>
 
-    Aus der Vergangenheit lernen: Unsere Fehler in der Flüchtlingspolitik erinnern uns daran, dass humanitäre Verantwortung wichtig ist. Gerade in einer Welt, in der so viele Menschen auf der Flucht sind, müssen wir Solidarität zeigen.
+                            <li><strong>Vorbereitung zählt:</strong> Auch wenn wir klein sind, können wir mit klugen Strategien und guter Planung
+                    sicher durch schwierige Zeiten kommen.</li></ul><br/>
 
-    Vorbereitung zählt: Auch wenn wir klein sind, können wir mit klugen Strategien und guter Planung sicher durch schwierige Zeiten kommen.
+                    Die Schweiz hat im Zweiten Weltkrieg gezeigt, dass es möglich ist, ein Gleichgewicht zwischen
+                    Selbstschutz und Verantwortung zu finden. Das ist eine Herausforderung, die uns auch heute noch
+                    beschäftigt - und zeigt, wie wichtig es ist, als kleines Land grosse Ideen zu haben.</p></>}
+                leftTitle="Warum Hitler die Schweiz nicht angegriffen hat"
+                rightText={<p>Dass Hitler die Schweiz nicht angegriffen hat, lag an mehreren Gründen:<br/><br/>
 
-    Die Schweiz hat im Zweiten Weltkrieg gezeigt, dass es möglich ist, ein Gleichgewicht zwischen Selbstschutz und Verantwortung zu finden. Das ist eine Herausforderung, die uns auch heute noch beschäftigt - und zeigt, wie wichtig es ist, als kleines Land grosse Ideen zu haben."
-                rightTitle="Warum Hitler die Schweiz nicht angegriffen hat"
-                rightText="Dass Hitler die Schweiz nicht angegriffen hat, lag an mehreren Gründen:
+                    <ul>
+                        <li><strong>Die Alpen als Festung:</strong> Die Berge waren ein riesiges Hindernis, und unser
+                            Réduit-Plan machte eine
+                            Invasion zu riskant und teuer.
+                        </li>
+                        <br/>
 
-    Die Alpen als Festung: Die Berge waren ein riesiges Hindernis, und unser Réduit-Plan machte eine Invasion zu riskant und teuer.
+                        <li><strong>Wirtschaftliche Interessen:</strong> Die Schweiz war ein wichtiger Handelspartner
+                            für Deutschland. Unsere
+                            Banken waren ein sicherer Ort für Gold und Vermögenswerte - auch für die Nazis.
+                        </li>
+                        <br/>
 
-    Wirtschaftliche Interessen: Die Schweiz war ein wichtiger Handelspartner für Deutschland. Unsere Banken waren ein sicherer Ort für Gold und Vermögenswerte - auch für die Nazis.
+                        <li><strong>Neutralität:</strong> Weil wir uns aus allem heraushielten und keine Bedrohung
+                            darstellten, hatte Hitler
+                            keinen Grund, uns anzugreifen.
+                        </li>
+                        <br/>
 
-    Neutralität: Weil wir uns aus allem heraushielten und keine Bedrohung darstellten, hatte Hitler keinen Grund, uns anzugreifen.
+                        <li><strong> strategischer Nutzen:</strong> Die Besetzung der Schweiz hätte Hitler mehr Probleme
+                            als Vorteile
+                            gebracht.
+                        </li>
+                    </ul>
 
-    Kein strategischer Nutzen: Die Besetzung der Schweiz hätte Hitler mehr Probleme als Vorteile gebracht.
-
-    Unsere Strategie, vorbereitet und neutral zu sein, hat uns letztendlich geschützt."
-                leftLinkUrl="https://chatgpt.com" rightLinkText="Chatgpt"
+                    Unsere Strategie, vorbereitet und neutral zu sein, hat uns letztendlich geschützt. Dies wurde nur danke dem
+                    nicht übereilligem Militärs zu verdanken, ihre
+                    ausserordentliche strategie in militäry und politik haben auch guten beitrag zu unserem erfolg geleistet</p>}
+                linkUrl="https://chatgpt.com" linkText="ChatGPT"
             />
             <ContentDate/>
         </div>

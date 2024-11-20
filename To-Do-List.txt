@@ -17,4 +17,10 @@ In use since 18.11.2024
 - Work on Privacy & Policy and Terms of Service (done)
 - Carousel Source adjusted with content correctly
 - Erstellungsdatum & Überarbeitungdatum anzeigen lassen (done)
-- Prevent footer content moving when switching to other page
+- Prevent footer content moving when switching to other page (optional)
+- Spacing in Verteidigung Video and last changed
+- Add Source to ContentCentered
+- Read through every Text
+- General Testing of the website
+- Performance Tester
+- Validator

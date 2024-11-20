@@ -57,19 +57,11 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                         <img
                             src={slide.image}
                             className="d-block w-100 carousel-image"
-                            alt={slide.caption}
+                            alt={slide.title}
                         />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption">
                             <h5>{slide.title}</h5>
                             <p>{slide.description}</p>
-                        </div>
-                        {/* Quellenangabe unter dem Bild */}
-                        <div className="carousel-source">
-                            <p>
-                                <a href={slide.sourceUrl} target="_blank" rel="noopener noreferrer">
-                                    {slide.sourceText}
-                                </a>
-                            </p>
                         </div>
                     </div>
                 ))}
@@ -94,7 +86,9 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
+            <p>Test</p>
         </div>
+
     );
 };
 

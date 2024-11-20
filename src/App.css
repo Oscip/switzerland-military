@@ -5,9 +5,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -256,16 +258,41 @@ h3 .title {
   flex-direction: column;
   justify-content: flex-start; /* Aligns content from the top of the column */
 }
-.carousel-image {
-  object-fit: cover; /* sorgt dafür, dass das Bild skaliert wird, ohne seine Proportionen zu verlieren */
-  height: 800px; /* setze die Höhe der Bilder auf eine feste Zahl */
-  width: 100%; /* sorgt dafür, dass das Bild immer die Breite des Containers ausfüllt */
-}
 
 .carousel-text {
-  text-align: center;
-  margin-top: 40px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
 }
+
+.carousel-image {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute; /* Ensures it is placed on the image */
+  bottom: 10%; /* Adjusts distance from the bottom of the image */
+  left: 50%; /* Positions the center of the caption at the horizontal center of the container */
+  transform: translate(-50%, 10%); /* Centers horizontally and adjusts vertical placement */
+  display: flex; /* Enables flexbox for centering content */
+  flex-direction: column; /* Aligns children (title and description) in a column */
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  text-align: center; /* Centers the text inside each child element */
+  color: white; /* Ensures readability over the image */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 10px; /* Adds spacing around the text */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 80%; /* Optional: limits how wide the caption can be */
+  width: auto; /* Allows the caption width to adjust to its content */
+}
+
+
+
+
 
 
 
