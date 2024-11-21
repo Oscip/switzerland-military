@@ -31,7 +31,6 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
             id="carouselExampleCaptions"
             className="carousel slide carousel-slide"
         >
-            {/* Indicators */}
             <div className="carousel-indicators">
                 {slides.map((_, index) => (
                     <button
@@ -45,15 +44,12 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                     ></button>
                 ))}
             </div>
-
-            {/* Slides */}
             <div className="carousel-inner">
                 {slides.map((slide, index) => (
                     <div
                         key={index}
                         className={`carousel-item ${activeIndex === index ? 'active' : ''}`}
                     >
-                        {/* Bild mit internem Link */}
                         <Link
                             to={slide.internalLink}
                             style={{ display: 'block' }}
@@ -72,8 +68,6 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                     </div>
                 ))}
             </div>
-
-            {/* Navigation Buttons */}
             <button
                 className="carousel-control-prev"
                 type="button"
@@ -94,8 +88,6 @@ const Carousel = ({ slides, onSlideChange, autoSlideInterval }) => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-
-            {/* Quellenangabe */}
             {currentSlide.linkName && currentSlide.linkUrl && (
                 <p
                     style={{

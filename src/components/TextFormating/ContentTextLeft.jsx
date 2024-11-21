@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-export default function ContentTextLeft({ title, text, imageSrc, linkText, linkUrl, imageSourceText, imageSourceUrl }) {
+export default function ContentTextLeft({ title, text, imageSrc, linkText, linkUrl, imageSourceText, imageSourceUrl, isImageClicked }) {
     return (
         <Container className="my-5 border-top border-black">
             <Row className="align-items-center pb-5 pt-5">
@@ -19,7 +19,7 @@ export default function ContentTextLeft({ title, text, imageSrc, linkText, linkU
                         <img
                             src={imageSrc}
                             alt={title}
-                            className="img-fluid image-style image-expansion"
+                            className={`img-fluid image-style ${isImageClicked ? 'expanded' : ''}`}
                         />
                         {imageSourceText && imageSourceUrl && (
                             <p>

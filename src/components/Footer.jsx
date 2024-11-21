@@ -6,7 +6,6 @@ export default function Footer() {
     return (
         <footer className="bg-dark text-white py-4 mt-auto">
             <Container>
-                {/* Primary Navigation Links */}
                 <Row className="justify-content-center">
                     <Col xs="auto">
                         <Link to="/home" className="text-white text-decoration-none px-3">
@@ -29,8 +28,6 @@ export default function Footer() {
                         </Link>
                     </Col>
                 </Row>
-
-                {/* Legal Links */}
                 <Row className="justify-content-center mt-3">
                     <Col xs="auto">
                         <Link to="/datenschutzerklärung" className="text-white text-decoration-none px-3">
@@ -43,15 +40,11 @@ export default function Footer() {
                         </Link>
                     </Col>
                 </Row>
-
-                {/* Divider Line */}
                 <Row className="mt-4">
                     <Col>
                         <hr className="border-light my-3"/>
                     </Col>
                 </Row>
-
-                {/* Copyright */}
                 <Row className="justify-content-center">
                     <Col xs={12} sm={10} md={8} lg={6}>
                         <p className="text-center mb-0">© 2024 Switzerland WWII History, All Rights Reserved</p>

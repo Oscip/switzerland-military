@@ -11,7 +11,7 @@ export default function ContentCentered({ title, imageSrc, text, sourceUrl, sour
                 backgroundPosition: 'center',
                 height: '250px',
                 width: '100%',
-                position: 'relative', // Ensure it's positioned relative to place the "Quelle" correctly
+                position: 'relative',
                 overflow: 'hidden',
             }}
         >
@@ -19,8 +19,6 @@ export default function ContentCentered({ title, imageSrc, text, sourceUrl, sour
                 <h2 className="text-overlay">{title}</h2>
                 <p>{text}</p>
             </div>
-
-            {/* Source container positioned at the bottom */}
             <div className="video-background-source">
                 <p>
                     Quelle:{' '}

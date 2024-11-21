@@ -1,5 +1,4 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
 import ContentCentered from "./TextFormating/ContentCentered.jsx";
 import ContentTextLeft from "./TextFormating/ContentTextLeft.jsx";
 import ContentTextRight from "./TextFormating/ContentTextRight.jsx";

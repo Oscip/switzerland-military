@@ -12,13 +12,13 @@ import CustomCursor from "./components/Cursor/CustomCursor.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import TermsService from "./components/TermsService.jsx";
 
-
 export default function App() {
     return (
-        <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true}}>
+        <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
             <>
                 <div className="main-content">
                     <CustomNavbar/>
+                    <CustomCursor/>
                     <div>
                         <Routes>
                             <Route path="/" element={<Home />} />
@@ -37,5 +37,3 @@ export default function App() {
         </Router>
     );
 }
-
-

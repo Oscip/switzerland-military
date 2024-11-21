@@ -2,20 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import icon from "../assets/Icons/icon_switzerland.png";
-import './CustomNavbar.css';
 
 export default function CustomNavbar() {
     const [showNavbar, setShowNavbar] = useState(true);
-    const [scrollingDown, setScrollingDown] = useState(false);
-    let prevScrollPos = window.pageYOffset;
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
+        let prevScrollPos = window.pageYOffset;
+
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
             const isScrollingDown = currentScrollPos > prevScrollPos;
 
-            setScrollingDown(isScrollingDown);
             setShowNavbar(!isScrollingDown);
+
+            setIsDarkMode(currentScrollPos > 1050);
+
             prevScrollPos = currentScrollPos;
         };
 
@@ -23,12 +25,12 @@ export default function CustomNavbar() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Determine navbar visibility class
     const navbarClass = showNavbar ? 'navbar-visible' : 'navbar-hidden';
+    const themeClass = isDarkMode ? 'navbar-dark' : 'navbar-light';
 
     return (
-        <div className={`navbar-container ${navbarClass}`}>
-            <Navbar expand="lg" className="nav-background-color" id="navbar-design">
+        <div className={`navbar-container ${navbarClass} ${themeClass}`}>
+            <Navbar expand="lg" id="navbar-design" className={themeClass}>
                 <Navbar.Brand as={Link} to="/" id="navbar-brand-design">
                     <img className="image-icon me-2" src={icon} alt="Swiss Icon" />
                     <span className="brand-text">Militärische Aspekte</span>

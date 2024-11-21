@@ -8,10 +8,8 @@ export default function CustomCursor() {
             setPosition({ x: e.clientX, y: e.clientY });
         };
 
-        // Add event listener to track mouse movement
         document.addEventListener("mousemove", moveCursor);
 
-        // Clean up the event listener when component unmounts
         return () => document.removeEventListener("mousemove", moveCursor);
     }, []);
 
